@@ -7,6 +7,7 @@ import Navbar from './components/Navbar'
 import CurrentProjects from './components/currentProjects'
 import PastProjects from './components/PastProjects'
 import Careers from './components/Careers'
+// import Layout from './components/Layout'
 
 
 
@@ -14,6 +15,7 @@ function App() {
 
   return (
     <>
+      {/* <Layout></Layout> */}
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home />}></Route>
