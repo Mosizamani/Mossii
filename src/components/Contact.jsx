@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './Contact.css';
 
 function Contact() {
     const [formData, setFormData] = useState({
@@ -96,7 +97,9 @@ function Contact() {
                         placeholder="Enter your message"
                     />
                 </div>
-                <button type="submit">Submit</button>
+                <div style={{ display: 'flex', justifyContent: 'center', marginTop: '1rem' }}>
+                    <button type="submit">Submit</button>
+                </div>
             </form>
         </div>
     );
