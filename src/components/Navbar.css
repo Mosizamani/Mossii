@@ -1,0 +1,36 @@
+nav {
+    background-color: #116d64;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky; /* This will make it stick to the top */
+    top: 0; /* Stick to the top of the viewport */
+    z-index: 1000; /* Ensure it stays above other content */
+    width: 100%; /* Ensure the navbar spans the full width */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #15897d;
+    color: #ffcc00;
+    border-radius: 5px;
+}
+
+nav a.active {
+    background-color: #fecb00;
+    color: #333;
+    border-radius: 5px;
+}
+
+nav a:not(:last-child) {
+    margin-right: 20px;
+}

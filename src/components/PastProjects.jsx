@@ -111,7 +111,13 @@ function PastProjects() {
   return (
     <div>
       <h1>Past Projects</h1>
-      <p>Here are some of the projects I've worked on in the past.</p>
+      <p>Our Portfolio of Success Dynamic Green Building Corp has a proven track record of delivering successful projects that prioritize sustainability without compromising quality or innovation. Some of our notable past projects include:
+
+        The Greenfield Office Park – A revolutionary commercial space recognized for its energy efficiency and innovative use of recycled materials.
+        Riverstone Residential Development – An eco-conscious housing project featuring solar energy, rainwater harvesting, and efficient insulation systems.
+        Sunny Grove School Expansion – A school renovation project that minimized the carbon footprint through the use of sustainable building materials and technologies.
+        These projects stand as a testament to our commitment to green building and sustainable development.</p>
+        
       <ImageList 
       variant='quilted' 
       cols={4} 

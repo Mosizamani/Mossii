@@ -5,6 +5,7 @@ import About from './components/About'
 import Contact from './components/Contact'
 import Navbar from './components/Navbar'
 import CurrentProjects from './components/currentProjects'
+import Cooperation from './components/Cooperation'
 import PastProjects from './components/PastProjects'
 import Careers from './components/Careers'
 // import Layout from './components/Layout'
@@ -22,6 +23,7 @@ function App() {
         <Route path="/about" element={<About />}></Route>
         <Route path="/current-projects" element={<CurrentProjects />}></Route>
         <Route path="/past-projects" element={<PastProjects />}></Route>
+        <Route path="/cooperation" element={<Cooperation />}></Route>
         <Route path="/careers" element={<Careers />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="*" element={<h1>404 Not Found</h1>}></Route>

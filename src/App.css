@@ -1,8 +1,16 @@
+body {
+  overflow-y: scroll; /* Ensures that the vertical scrollbar is always visible */
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100vh;
 }
 
 .logo {

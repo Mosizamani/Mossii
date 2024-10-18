@@ -25,12 +25,12 @@ const Layout = () => {
                     <Tab value="about" label="About" />
                     <Tab value="current-projects" label="Current Projects" />
                     <Tab value="past-projects" label="Past Projects" />
+                    <Tab value="cooperation" label="Cooperation" />
                     <Tab value="careers" label="Careers" />
                     <Tab value="contact" label="Contact" />
                     <Tab value="NotFound" />
                 </Tabs>
             </StyledNav>
-
             <Outlet />
         </main>
     )
