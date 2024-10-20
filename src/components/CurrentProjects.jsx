@@ -16,6 +16,7 @@ function CurrentProjects() {
       </ul>
       <p>Our team is dedicated to creating innovative and sustainable solutions for the built environment. 
         Stay tuned for updates as we continue to push the boundaries of green construction.</p>
+      
     </div>
   )
 }
