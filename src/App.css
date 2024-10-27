@@ -1,6 +1,6 @@
 body {
   overflow-y: scroll; /* Ensures that the vertical scrollbar is always visible */
-  font-family: 'Roboto', sans-serif; /* Use the Roboto font */
+  font-family: Arial, sans-serif; /* Use the Roboto font */
   font-size: large;
 }
 
