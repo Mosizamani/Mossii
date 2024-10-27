@@ -4,13 +4,10 @@ import Home from './components/Home'
 import About from './components/About'
 import Contact from './components/Contact'
 import Navbar from './components/Navbar'
-import CurrentProjects from './components/currentProjects'
+import CurrentProjects from './components/CurrentProjects'
 import Cooperation from './components/Cooperation'
 import PastProjects from './components/PastProjects'
 import Careers from './components/Careers'
-// import Layout from './components/Layout'
-
-
 
 function App() {
 
