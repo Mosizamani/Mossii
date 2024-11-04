@@ -9,6 +9,25 @@
     top: 0;
     z-index: 1000;
   }
+
+  .logo-image {
+    width: 100px; /* Default width */
+    height: auto;
+    max-width: 100%; /* Ensures it scales down on smaller screens */
+  }
+  
+  @media (max-width: 768px) {
+    .logo-image {
+      width: 80px; /* Adjusted size for tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo-image {
+      width: 60px; /* Adjusted size for mobile */
+    }
+  }
+  
   
   .nav-links {
     display: flex;

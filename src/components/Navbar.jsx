@@ -12,7 +12,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="logo">
-        <Link to="/"><img src="/public/Logo.jpg" alt="Logo" className="logo-image" width="100" height="100" /></Link>
+        <Link to="/"><img src="/public/Logo.jpg" alt="Logo" className="logo-image" /></Link>
       </div>
       <div className={`menu-toggle ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
         <span></span>
