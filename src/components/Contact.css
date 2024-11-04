@@ -1,4 +1,3 @@
-/* Contact Form Styles */
 form {
     background-color: #b3ebfc; /* Light background for the form */
     border: 1px solid #1e8dc0; /* Same color as the navbar */
@@ -21,7 +20,7 @@ label {
 }
 
 input, textarea {
-    width: 100%; /* Full width inputs */
+    width: 96.5%; /* Full width inputs */
     padding: 10px; /* Padding inside inputs */
     margin-bottom: 15px; /* Space below inputs */
     border: 1px solid #ccc; /* Light border for inputs */

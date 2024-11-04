@@ -12,10 +12,8 @@ function CurrentProjects() {
         
         <li style={{ fontWeight: 'bold' }}><a href="https://mid-term-ubc-bootcamp.onrender.com">Note-Taking App</a>, (UBC Bootcamp, 2024)</li>
         <p>This project is a structured note-taking app allowing users to organize and store information efficiently. 
-          The app is built using HTML, CSS and JavaScript as front-end and MongoDB for database and Node.Js as back-end for a responsive and interactive experience.
+          The app is built using HTML, CSS and JavaScript as front-end, MongoDB for database and Node.Js as back-end for a responsive and interactive experience.
           <a href="https://github.com/Mosizamani/mid-term-UBC-Bootcamp">Github Link</a></p>
-        {/* <li style={{ fontWeight: 'bold' }}></li>
-        <p></p> */}
       </ul>
       <p>My effert is dedicated to creating innovative and sustainable solutions for the software development. 
         Stay tuned for updates as I continue to push the boundaries of software development.</p>

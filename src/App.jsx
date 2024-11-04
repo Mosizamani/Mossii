@@ -12,7 +12,6 @@ function App() {
 
   return (
     <>
-      {/* <Layout></Layout> */}
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home />}></Route>
