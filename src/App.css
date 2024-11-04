@@ -11,6 +11,10 @@ body, p, h1, h2, h3, h4, h5, h6 {
   color: #000000; /* Black text */
 }
 
+p {
+  text-align: justify;
+}
+
 
 #root {
   max-width: 1280px;
