@@ -1,10 +1,16 @@
 body {
   background-color: #ffffff;
+  color: #000000;
   overflow-y: scroll;
   font-family: Arial, sans-serif;
   font-size: 16px;
   padding: 20px;
 }
+
+body, p, h1, h2, h3, h4, h5, h6 {
+  color: #000000; /* Black text */
+}
+
 
 #root {
   max-width: 1280px;
@@ -27,6 +33,7 @@ body {
 
 @media (max-width: 768px) {
   body {
+    color: #000000;
     font-size: 14px;
     padding: 10px;
   }
@@ -42,6 +49,7 @@ body {
 
 @media (max-width: 480px) {
   body {
+    color: #000000;
     font-size: 12px;
     padding: 5px;
   }
