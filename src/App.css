@@ -32,7 +32,7 @@ p {
 }
 
 .logo:hover {
-  filter: drop-shadow(0 0 4em #e300f8aa);
+  filter: drop-shadow(0 0 4em white);
 }
 
 @media (max-width: 768px) {
