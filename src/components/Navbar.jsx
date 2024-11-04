@@ -1,18 +1,34 @@
-import { Link} from 'react-router-dom'
-import './Navbar.css'
+import { Link } from 'react-router-dom';
+import './Navbar.css';
+import { useState } from 'react';
 
 function Navbar() {
-    return (
-        <nav>
-            <Link to="/">Home</Link>
-            <Link to="/my-skills">My Skills</Link>
-            <Link to="/current-projects">Current Projects</Link>
-            <Link to="/education-work">Education & Experience</Link>
-            <Link to="/cooperation">Cooperation</Link>
-            <Link to="/contact">Contact</Link>
-            <Link to="/NotFound"></Link>
-        </nav>
-    )
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <nav className="navbar">
+      <div className="logo">
+        <Link to="/">My Logo</Link>
+      </div>
+      <div className={`menu-toggle ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div className={`nav-links ${isOpen ? 'active' : ''}`}>
+        <Link to="/" onClick={toggleMenu}>Home</Link>
+        <Link to="/my-skills" onClick={toggleMenu}>My Skills</Link>
+        <Link to="/current-projects" onClick={toggleMenu}>Current Projects</Link>
+        <Link to="/education-work" onClick={toggleMenu}>Education & Experience</Link>
+        <Link to="/cooperation" onClick={toggleMenu}>Cooperation</Link>
+        <Link to="/contact" onClick={toggleMenu}>Contact</Link>
+      </div>
+    </nav>
+  );
 }
 
-export default Navbar
+export default Navbar;

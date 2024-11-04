@@ -6,9 +6,13 @@ function EducationExperience() {
       <h1>Education & Experience</h1>
 
       <h2>Education</h2>
+      <p>This page provides an overview of my educational path and professional journey across engineering, technology, and software development. Currently, 
+        I'm honing my full-stack development skills at the University of British Columbia, following my foundational studies in computer science and artificial 
+        intelligence from Harvard. My academic background includes a Master’s in Engineering and Project Management, as well as a Bachelor’s in Civil Engineering. 
+        Professionally, I’ve contributed in technology engineering roles, leveraging both technical expertise and practical problem-solving skills to drive innovation and optimize systems.</p>
       <div style={{ display: 'flex', flexDirection: 'column', marginBottom: '20px' }}>
         <div style={{ marginBottom: '10px' }}>
-          <h3>UBC, Software Development Program - Bootcamp</h3>
+          <h3>University of British Columbia, Software Development Program - Bootcamp</h3>
           <p>April 2024 – Present</p>
           <p>Focus: Software Development Foundations, Full-Stack Development, Algorithm and Data Structures, DevOps, Mobile Development, Authentication, and Validation</p>
         </div>

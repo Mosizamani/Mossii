@@ -1,36 +1,83 @@
-nav {
+/* Base navbar styling */
+.navbar {
     background-color: #1e8dc0;
-    padding: 10px;
+    padding: 10px 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    position: sticky; /* This will make it stick to the top */
-    top: 0; /* Stick to the top of the viewport */
-    z-index: 1000; /* Ensure it stays above other content */
-    width: 100%; /* Ensure the navbar spans the full width */
-}
-
-nav a {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
     color: white;
     text-decoration: none;
     padding: 10px 15px;
     font-size: 18px;
     font-weight: bold;
     transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-nav a:hover {
+  }
+  
+  .nav-links a:hover {
     background-color: #156489;
     color: #ffcc00;
     border-radius: 5px;
-}
-
-nav a.active {
-    background-color: #fecb00;
-    color: #333;
-    border-radius: 5px;
-}
-
-nav a:not(:last-child) {
-    margin-right: 20px;
-}
+  }
+  
+  /* Hamburger menu icon */
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+  }
+  
+  .menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: 0.3s ease;
+  }
+  
+  /* Responsive adjustments for mobile */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #1e8dc0;
+      width: 100%;
+      text-align: center;
+      padding: 20px 0;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .menu-toggle {
+      display: flex;
+    }
+  
+    .menu-toggle.open span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+  
+    .menu-toggle.open span:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .menu-toggle.open span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+  }
+  
