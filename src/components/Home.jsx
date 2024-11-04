@@ -2,12 +2,12 @@
 function Home() {
   return (
     <div>
-        <h1>Dynamic Green Building Corp</h1>
-      <p>Welcome to Dynamic Green Building Corp! Dynamic Green Building Corp is a leader in sustainable construction, 
-        specializing in eco-friendly, energy-efficient, and innovative building solutions. With decades of experience, 
-        we have built a reputation for excellence, delivering high-quality projects that meet the needs of modern businesses, 
-        communities, and the environment. At Dynamic Green Building, we believe that the future of construction is green, 
-        and we are committed to shaping the landscape with cutting-edge technology, sustainable materials, and forward-thinking designs.</p>
+        <h1>Introduction</h1>
+      <p>Hello, I'm Mostafa Zamaniturk, a passionate <b>Software Engineer</b> based in the San Francisco Bay Area. 
+        With a strong foundation in <b>full-stack development</b> and experience in <b>object-oriented programming</b>, 
+        I’m dedicated to building efficient, scalable, and high-quality software solutions.</p> 
+        <p>Currently, I’m focused on expanding my expertise in <b>Node.js</b>, <b>React</b>, <b>React Native</b>, <b>Expo</b>, <b>Python</b>, and <b>MongoDB</b>.</p> 
+        <p>Welcome to my portfolio!</p>
     </div>
   )
 }

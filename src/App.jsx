@@ -1,13 +1,12 @@
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
 import Home from './components/Home'
-import About from './components/About'
+import MySkills from './components/MySkills'
 import Contact from './components/Contact'
 import Navbar from './components/Navbar'
 import CurrentProjects from './components/CurrentProjects'
 import Cooperation from './components/Cooperation'
-import PastProjects from './components/PastProjects'
-import Careers from './components/Careers'
+import EducationExperience from './components/EducationExperience'
 
 function App() {
 
@@ -17,11 +16,10 @@ function App() {
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/about" element={<About />}></Route>
+        <Route path="/my-skills" element={<MySkills />}></Route>
         <Route path="/current-projects" element={<CurrentProjects />}></Route>
-        <Route path="/past-projects" element={<PastProjects />}></Route>
+        <Route path="/education-work" element={<EducationExperience />}></Route>
         <Route path="/cooperation" element={<Cooperation />}></Route>
-        <Route path="/careers" element={<Careers />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="*" element={<h1>404 Not Found</h1>}></Route>
       </Routes>

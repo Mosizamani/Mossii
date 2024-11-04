@@ -34,20 +34,21 @@ function Contact() {
 
     return (
         <div>
-            <h1>Contact</h1>
+            <h1>Contact me</h1>
             <p>
-                Get in Touch with Us! We’d love to hear from you! Whether you have questions about our services, 
-                are interested in starting a project, or would like to learn more about Dynamic Green Building Corp, 
+                Get in Touch with me! I’d love to hear from you! Whether you have questions about my services, 
+                are interested in starting a project, or would like to learn more about me, 
                 please feel free to reach out.
             </p>
 
             <ul>Contact Information:</ul>
-            <li>CEO Phone number: (778) 985-6453</li>
-            <li>Admin Phone number: (778) 985-9078</li>
-            <li>Email: info@dynamicgreenbuilding.com</li>
-            <li>Office Address: 109 - 230 16th St. East, North Vancouver, BC, Canada V7L 2T1</li>
+            <li>Phone number: (408) 304-4333</li>
+            <li>Email: Eng.mzamanit@gmail.com</li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/mostafazamaniturk/">Mostafa Zamaniturk</a></li>
+            <li>GitHub: <a href="https://github.com/Mostafazamanicivil">Profile 1</a></li>
+            <li>GitHub: <a href="https://github.com/Mosizamani">Profile 2</a></li>
 
-            <p>You can also fill out the contact form below, and one of our team members will get back to you as soon as possible.</p>
+            <p>You can also fill out the contact form below, and will get back to you as soon as possible.</p>
 
             {/* Contact Form */}
             <form onSubmit={handleSubmit} style={{ maxWidth: '600px', margin: '0 auto' }}>

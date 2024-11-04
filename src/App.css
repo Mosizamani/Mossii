@@ -1,4 +1,5 @@
 body {
+  background-color: #ffffff;
   overflow-y: scroll; /* Ensures that the vertical scrollbar is always visible */
   font-family: Arial, sans-serif; /* Use the Roboto font */
   font-size: large;

@@ -1,7 +1,7 @@
 /* Contact Form Styles */
 form {
-    background-color: #f7f7f7; /* Light background for the form */
-    border: 1px solid #116d64; /* Same color as the navbar */
+    background-color: #b3ebfc; /* Light background for the form */
+    border: 1px solid #1e8dc0; /* Same color as the navbar */
     border-radius: 8px; /* Rounded corners */
     padding: 20px; /* Padding around the form */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
@@ -9,13 +9,13 @@ form {
 }
 
 h1 {
-    color: #116d64; /* Matching color for the heading */
+    color: #1e8dc0; /* Matching color for the heading */
     margin-bottom: 10px; /* Space below the heading */
 }
 
 label {
     font-weight: bold; /* Bold labels */
-    color: #116d64; /* Matching color for labels */
+    color: #1e8dc0; /* Matching color for labels */
     display: block; /* Make labels block to stack with inputs */
     margin-bottom: 5px; /* Space below labels */
 }
@@ -30,12 +30,12 @@ input, textarea {
 }
 
 input:focus, textarea:focus {
-    border-color: #116d64; /* Border color on focus */
+    border-color: #1e8dc0; /* Border color on focus */
     outline: none; /* Remove default outline */
 }
 
 button {
-    background-color: #116d64 !important; /* Button color matches the navbar */
+    background-color: #1e8dc0 !important; /* Button color matches the navbar */
     color: white; /* White text for button */
     padding: 10px 15px; /* Padding for button */
     border: none; /* No border */
@@ -48,5 +48,5 @@ button {
 }
 
 button:hover {
-    background-color: #15897d !important; /* Darker color on hover */
+    background-color: #1e8dc0 !important; /* Darker color on hover */
 }

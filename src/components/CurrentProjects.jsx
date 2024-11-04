@@ -3,20 +3,22 @@ function CurrentProjects() {
   return (
     <div>
       <h1>Current Projects</h1>
-      <h2>Our Current Projects</h2>
-      <p>Our Current Projects Dynamic Green Building Corp is currently involved in several cutting-edge construction projects 
-        that demonstrate our commitment to sustainable and eco-friendly building practices. Below are some of the exciting projects we're working on:</p>
+      <p>My Current Projects are currently involved in several cutting-edge technologies 
+        that demonstrate my commitment to efficient and  software practices. Below are some of the exciting projects I am working on:</p>
       <ul>
-        <li style={{ fontWeight: 'bold' }}>Green Horizon Commercial Complex</li>
-        <p>A state-of-the-art office space designed with energy-efficient systems and environmentally friendly materials.</p>
-        <li style={{ fontWeight: 'bold' }}>Eco-Friendly Residential Towers</li>
-        <p>High-rise residential buildings incorporating renewable energy and green spaces to enhance urban living.</p>
-        <li style={{ fontWeight: 'bold' }}>Sustainable Community Center</li>
-        <p>A community space focusing on environmental education, powered by solar energy.</p>
+        <li style={{ fontWeight: 'bold' }}><a href="https://weather-forecasting-app-nv03.onrender.com">Weather Forecast App</a>, (UBC Bootcamp, 2024)</li>
+        <p>A comprehensive weather application providing real-time weather updates. Built with React, Google Maps API, 
+          and OpenWeatherMap API, it focuses on user experience and accurate data visualization.<a href="https://github.com/Mosizamani/weather-forecasting-app">Github Link</a></p>
+        
+        <li style={{ fontWeight: 'bold' }}><a href="https://mid-term-ubc-bootcamp.onrender.com">Note-Taking App</a>, (UBC Bootcamp, 2024)</li>
+        <p>This project is a structured note-taking app allowing users to organize and store information efficiently. 
+          The app is built using HTML, CSS and JavaScript as front-end and MongoDB for database and Node.Js as back-end for a responsive and interactive experience.
+          <a href="https://github.com/Mosizamani/mid-term-UBC-Bootcamp">Github Link</a></p>
+        {/* <li style={{ fontWeight: 'bold' }}></li>
+        <p></p> */}
       </ul>
-      <p>Our team is dedicated to creating innovative and sustainable solutions for the built environment. 
-        Stay tuned for updates as we continue to push the boundaries of green construction.</p>
-      
+      <p>My effert is dedicated to creating innovative and sustainable solutions for the software development. 
+        Stay tuned for updates as I continue to push the boundaries of software development.</p>
     </div>
   )
 }
