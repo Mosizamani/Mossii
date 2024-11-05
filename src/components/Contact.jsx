@@ -19,10 +19,28 @@ function Contact() {
 
     console.log(formData)
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // Add your form submission logic here (e.g., API call)
-        console.log("Form submitted:", formData);
+        try {
+            const response = await fetch('http://localhost:5000/send-email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+
+            if (response.ok) {
+                console.log("Email sent successfully");
+                alert("Thank you for reaching out! I will get back to you soon.");
+            } else {
+                console.error("Failed to send email");
+                alert("Oops! Something went wrong. Please try again later.");
+            }
+        } catch (error) {
+            console.error("Error:", error);
+        }
+
         // Reset the form after submission
         setFormData({
             name: '',
