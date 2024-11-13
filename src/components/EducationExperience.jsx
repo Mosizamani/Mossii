@@ -19,7 +19,7 @@ function EducationExperience() {
         
         <div style={{ marginBottom: '10px' }}>
           <h3>Harvard University, CS50</h3>
-          <p>May 2023 – April 2023</p>
+          <p>May 2023 – April 2024</p>
           <p>Courses: Introduction to Computer Science, Programming with Python, Web Programming with Python, Artificial Intelligence with Python</p>
         </div>
 
