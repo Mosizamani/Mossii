@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState } from 'react'
+import emailjs from 'emailjs-com'
 import './Contact.css';
 
 function Contact() {
@@ -9,6 +10,8 @@ function Contact() {
         message: ''
     });
 
+    const [isSubmitting, setIsSubmitting] = useState(false)
+
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({
@@ -17,29 +20,30 @@ function Contact() {
         });
     };
 
-    console.log(formData)
-
     const handleSubmit = async (e) => {
         e.preventDefault();
-        try {
-            const response = await fetch('http://localhost:5000/send-email', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData),
-            });
+        setIsSubmitting(true);  // Set loading state when submitting the form
 
-            if (response.ok) {
-                console.log("Email sent successfully");
+        try {
+            // Replace these values with your EmailJS service, template, and user ID
+            const response = await emailjs.send(
+                'service_6j0ltrq',      // Your EmailJS service ID
+                'template_518uiga',     // Your EmailJS template ID
+                formData,               // The form data that you send
+                'JQzKNrL8YKhwTFRrA'          // Your EmailJS user ID
+            )
+
+            if (response.status === 200) {
                 alert("Thank you for reaching out! I will get back to you soon.");
             } else {
-                console.error("Failed to send email");
                 alert("Oops! Something went wrong. Please try again later.");
             }
         } catch (error) {
-            console.error("Error:", error);
+            console.error("Error sending email:", error);
+            alert("There was an error with the submission. Please try again.");
         }
+
+        setIsSubmitting(false);  // Reset loading state
 
         // Reset the form after submission
         setFormData({
@@ -117,7 +121,7 @@ function Contact() {
                     />
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'center', marginTop: '1rem' }}>
-                    <button type="submit">Submit</button>
+                    <button type="submit">{isSubmitting ? 'Sending...' : 'Submit'}</button>
                 </div>
             </form>
         </div>
