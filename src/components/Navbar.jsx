@@ -12,7 +12,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="logo">
-        <Link to="/"><img src="/public/Logo.jpg" alt="Logo" className="logo-image" /></Link>
+        <Link to="/"><img src="https://res.cloudinary.com/dwtkinvs2/image/upload/v1731509986/Logo_e9wtuv.jpg" alt="Logo" className="logo-image" /></Link>
       </div>
       <div className={`menu-toggle ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
         <span></span>
